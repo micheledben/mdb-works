@@ -1,0 +1,14 @@
+.content-max {
+  .intro,
+  .skills,
+  .about-me,
+  .services {
+    border-bottom: 1px solid white;
+  }
+  .skills,
+  .about-me,
+  .services {
+    padding: 8vw 0px;
+    // height: calc(100vh - 100px);
+  }
+}

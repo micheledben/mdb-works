@@ -1,0 +1,28 @@
+<div class="content-max">
+  <div class="title">
+    <h2>Progetti</h2>
+  </div>
+  <div class="all-cards">
+    <div class="single-card" *ngFor="let card of cardService.cards" routerLink="{{card.id}}">
+      <div class="text">
+        <div class="title-description">
+          <div class="card-title">
+            <p>{{card.name}}</p>
+          </div>
+          <div class="card-description">
+            <p>{{card.description}}</p>
+          </div>
+        </div>
+        <div class="coding">
+          @if(card.coding){
+          <p>Codice website scritto in:</p>
+          <p>({{card.coding}})</p>
+          }
+        </div>
+      </div>
+      <div class="image">
+        <img [src]="card.images[0]" alt="">
+      </div>
+    </div>
+  </div>
+</div>

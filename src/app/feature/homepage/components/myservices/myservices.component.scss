@@ -1,0 +1,54 @@
+.content-max {
+  .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .all-services{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    .single-service{
+      padding: 20px;
+      width: 32%;
+      height: 20vw;
+      border-radius: 20px;
+      background-color: black;
+      transition: 0.1s linear;
+      border: 1px solid white;
+      .name{
+        padding-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        img{
+          width: 4vw;
+        }
+        p{
+          font-size: 2vw;
+          font-weight: 100;
+          font-family: "Orbitron", sans-serif;
+          transition: 0.3s ease-in-out;
+        }
+      }
+      .description{
+        p{
+          font-size: 1.3vw;
+          font-family: "Archivo Narrow", sans-serif;
+          line-height: 1.5vw;
+        }
+      }
+    }
+
+    .single-service:hover{
+      background-color: rgb(40, 40, 40);
+      .name{
+        p{
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

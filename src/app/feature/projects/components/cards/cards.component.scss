@@ -1,0 +1,71 @@
+.content-max {
+  padding: 2vw 0px;
+  min-height: calc(100vh - 7vw);
+  width: 100%;
+  .title{
+    width: fit-content;
+  }
+  .all-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+    .single-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 15px;
+      width: 32%;
+      height: 35vw;
+      min-height: fit-content;
+      border-radius: 20px;
+      background-color: rgb(10, 10, 10);
+      border: 1px solid white;
+      transition: 0.2s linear;
+      cursor: pointer;
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 1.3vw;
+        .title-description {
+          .card-title {
+            font-size: 2vw;
+            font-family: "Orbitron", sans-serif;
+            transition: 0.3s ease-in-out;
+          }
+          .card-description {
+            font-family: "Archivo Narrow", sans-serif;
+          }
+        }
+        // .coding {
+        //   display: flex;
+        //   flex-direction: column;
+        //   align-items: center;
+        // }
+      }
+      .image {
+        width: 100%;
+        height: 50%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top;
+          border-radius: 0px 0px 15px 15px;
+        }
+      }
+    }
+    .single-card:hover{
+      background-color: navy;
+      .title-description{
+        .card-title{
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

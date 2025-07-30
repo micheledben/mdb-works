@@ -1,0 +1,107 @@
+.content-max {
+  padding: 2vw 0px;
+  min-height: calc(100vh - 7vw);
+  width: 100%;
+  .title-arrow {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+    .arrow {
+      width: 2.7vw;
+      height: 2.7vw;
+      background-color: white;
+      padding: 0.4vw;
+      border-radius: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .content {
+    padding: 2vw 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+    p {
+      font-size: 1.3vw;
+      font-family: "Archivo Narrow", sans-serif;
+    }
+    .description-project,
+    .title-images {
+      padding: 1.5vw;
+      border: 1px solid white;
+      border-radius: 20px;
+    }
+    .description-project {
+      display: flex;
+      flex-direction: column;
+      gap: 2vw;
+      width: 30%;
+    }
+    .repository{
+      p{
+        font-family: "Orbitron", sans-serif;
+        font-size: 1.5vw;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.3vw;
+        font-family: "Archivo Narrow", sans-serif;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+    .title-images {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      .responsive-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+      }
+      .title {
+        padding: 0px 0px 2vw;
+      }
+      .images {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2vw;
+        width: 100%;
+        gap: 2vw;
+        p {
+          width: 20%;
+        }
+        .single-image {
+          width: 80%;
+          display: flex;
+          flex-direction: row;
+          gap: 1vw;
+          .image-pc {
+            height: 20vw;
+          }
+          .image-smartphone {
+            height: 40vw;
+          }
+          .image-pc,
+          .image-smartphone {
+            padding: 0.5vw;
+            background-color: white;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            img {
+              object-fit: cover;
+              object-position: top;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

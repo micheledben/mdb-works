@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Imperial+Script&family=Orbitron:wght@400..900&display=swap");
+// TITOLI
+// font-family: "Orbitron", sans-serif;
+// TESTO
+// font-family: "Archivo Narrow", sans-serif;
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  letter-spacing: 15px;
+  font-family: "Orbitron", sans-serif;
+  text-transform: capitalize;
+  font-size: 5.5vw;
+  font-weight: 100;
+  background: -webkit-linear-gradient(140deg, rgb(255, 0, 255), orangered);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 6vw;
+  // text-fill-color: transparent;
+}
+
+h2 {
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  font-family: "Orbitron", sans-serif;
+  font-size: 3vw;
+  font-weight: 500;
+  background: -webkit-linear-gradient(140deg, rgb(255, 0, 255), orangered);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  // text-fill-color: transparent;
+}
+
+h3 {
+  font-size: 1.5vw;
+  text-transform: capitalize;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 100;
+}
+
+button {
+  cursor: pointer;
+}
+
+.autoshow {
+  animation: autoshow both;
+  animation-timeline: view(80% 10%);
+}
+
+.autoshow-rev {
+  animation: autoshow reverse;
+  animation-timeline: view(0% 50%);
+}
+
+.autoshow2 {
+  animation: autoshow both;
+  animation-timeline: view(80% 10%);
+}
+
+.image-reveal {
+  animation: image-reveal both;
+  animation-timeline: view(90% 20%);
+}
+
+@keyframes autoshow {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes autoshow2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes image-reveal {
+  0% {
+    // width: 0px;
+    opacity: 0;
+    scale: 0.5;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    // width: 50%;
+  }
+}
