@@ -2,25 +2,28 @@
 <div class="content-max">
   <div class="title-arrow">
     <button class="arrow" routerLink="..">
-      <img src="/assets/back.png" alt="">
+      <img src="/assets/back.png" alt="" />
     </button>
     <div class="title">
-      <h2>{{project.name}}</h2>
+      <h2>{{ project.name }}</h2>
     </div>
   </div>
   <div class="content">
     <div class="description-project">
       <div class="description">
         <h3>descrizione progetto:</h3>
-        <p>{{project.descriptionProject}}</p>
+        <p>{{ project.descriptionProject }}</p>
       </div>
       <div class="tecnologies">
         <h3>tecnologie utilizzate:</h3>
-        <p>({{project.coding}})</p>
+        <p>({{ project.coding }})</p>
       </div>
       <div class="repository">
         <p>Vai al repository GitHub:</p>
-        <a href="https://github.com/micheledben/E-commerce-bag" target="_blank">BagsCrochet2 <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a [href]="project.repository" target="_blank"
+          >{{ project.name }}
+          <i class="fa-solid fa-arrow-up-right-from-square"></i
+        ></a>
       </div>
     </div>
     <div class="title-images">
@@ -32,27 +35,26 @@
           <p>Visulizzazione PC</p>
           <div class="single-image">
             <div class="image-pc">
-              <img [src]="project.images[3]" alt="">
+              <img [src]="project.images[1]" alt="" />
             </div>
             <div class="image-pc">
-              <img [src]="project.images[4]" alt="">
+              <img [src]="project.images[2]" alt="" />
             </div>
           </div>
         </div>
-<hr>
+        <hr />
         <div class="images">
           <p>Visulizzazione Smartphone</p>
           <div class="single-image">
             <div class="image-smartphone">
-              <img [src]="project.images[6]" alt="">
+              <img [src]="project.images[3]" alt="" />
             </div>
             <div class="image-smartphone">
-              <img [src]="project.images[7]" alt="">
+              <img [src]="project.images[4]" alt="" />
             </div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </div>

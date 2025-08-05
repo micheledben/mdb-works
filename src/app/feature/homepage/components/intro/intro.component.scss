@@ -3,10 +3,14 @@
   align-items: top;
   height: calc(100vh - 80px);
   padding-top: 9vw;
-  .title {
+  .paragraph {
     display: flex;
     flex-direction: column;
     width: 65%;
+    h1 {
+      opacity: 0;
+      animation: show-text 1s ease forwards;
+    }
     .text {
       font-family: "Archivo Narrow", sans-serif;
       letter-spacing: 1px;
@@ -21,15 +25,21 @@
         font-size: 1.5vw;
         padding: 15px 0px 25px;
         width: 75%;
+        opacity: 0;
+        animation: show-text 1s ease forwards;
+        animation-delay: 0.2s;
       }
     }
     .buttons {
       display: flex;
       gap: 20px;
+      opacity: 0;
+      animation: show-text 1s ease forwards;
+      animation-delay: 0.5s;
       button {
-        padding: 10px 20px;
+        padding: 0.5vw 1vw;
         font-size: 1.3vw;
-        border-radius: 20px;
+        border-radius: 5px;
         border: 2px solid white;
         color: white;
         background: transparent;
@@ -39,13 +49,13 @@
         i {
           color: lime;
         }
-        border-color: lime;
+        border: 2px solid lime;
       }
       button:hover {
         background: linear-gradient(
           140deg,
-          rgba(255, 68, 0, 0.7),
-          rgba(255, 0, 255, 0.7)
+          rgba(255, 68, 0),
+          rgba(255, 0, 255)
         );
         color: white;
         box-shadow: 0px 4px 10px white;
@@ -61,18 +71,56 @@
     justify-content: end;
     width: 30%;
     height: 25vw;
+    opacity: 0;
+    animation: show-image 2s ease forwards;
+    animation-delay: 0.7s;
     .image {
       width: 100%;
       height: 100%;
-      border-radius: 20px;
+      border-radius: 5px;
       background-image: linear-gradient(140deg, rgb(255, 0, 255), orangered);
-      padding: 4px;
+      padding: 5px;
+      transition: 0.2s ease;
       img {
         object-fit: cover;
         height: 100%;
         width: 100%;
-        border-radius: 18px;
+        border-radius: 5px;
+        transition: 0.5s ease-in-out;
       }
     }
+    .image:before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: black;
+    }
+  }
+}
+
+@keyframes show-text {
+  0% {
+    transform: scale(0) rotatex(-50deg);
+    opacity: 0;
+  }
+  50% {
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotatex(0);
+  }
+}
+
+@keyframes show-image {
+  0% {
+    transform: scale(0) rotate(-50deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1) rotate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
   }
 }

@@ -1,11 +1,11 @@
 <div class="content-max">
   <div class="title autoshow">
-    <h2>i miei servizi</h2>
+    <h2>My services</h2>
   </div>
   <div class="all-services">
     <div class="single-service autoshow" *ngFor="let service of services">
       <div class="name">
-        <img src="{{service.image}}" alt="">
+        <img src="{{ service.image }}" alt="" />
         <p>{{ service.name }}</p>
       </div>
       <div class="description">
