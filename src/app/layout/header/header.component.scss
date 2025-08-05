@@ -64,3 +64,22 @@
     transform: rotatez(360deg);
   }
 }
+
+@media screen and (max-width: 900px) {
+  .menu-max {
+    padding: 0;
+    .menu-min {
+      margin: 0;
+      border: none;
+      border-bottom: 1px solid white;
+      .logo {
+        display: none;
+      }
+      .menu {
+        width: 100%;
+        border-left: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
