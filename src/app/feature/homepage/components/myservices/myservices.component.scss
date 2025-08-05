@@ -1,40 +1,40 @@
 .content-max {
-  .title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .all-services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 25vh 0px;
+  .all-services {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
-    .single-service{
+    .single-service {
       padding: 20px;
       width: 32%;
       height: 20vw;
       border-radius: 20px;
-      background-color: black;
+      background-color: transparent;
       transition: 0.1s linear;
-      border: 1px solid white;
-      .name{
+      border: 2px solid white;
+      .name {
         padding-bottom: 10px;
         display: flex;
         align-items: center;
         gap: 15px;
-        img{
+        img {
           width: 4vw;
         }
-        p{
+        p {
           font-size: 2vw;
           font-weight: 100;
           font-family: "Orbitron", sans-serif;
           transition: 0.3s ease-in-out;
         }
       }
-      .description{
-        p{
+      .description {
+        p {
           font-size: 1.3vw;
           font-family: "Archivo Narrow", sans-serif;
           line-height: 1.5vw;
@@ -42,10 +42,11 @@
       }
     }
 
-    .single-service:hover{
-      background-color: rgb(40, 40, 40);
-      .name{
-        p{
+    .single-service:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      .name {
+        p {
           padding-left: 10px;
         }
       }
