@@ -70,11 +70,11 @@
 @keyframes show-title-card {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }
 
@@ -84,12 +84,10 @@
     .title {
       width: 100%;
       text-align: center;
-      animation: show-title-card-cell 1s forwards;
     }
     .all-cards {
       grid-template-columns: repeat(1, 1fr);
       .single-card {
-        animation: show-title-card-cell 1s forwards;
         animation-delay: 0.5s;
         flex-direction: column;
         height: 80vw;
@@ -110,16 +108,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes show-title-card-cell {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }
