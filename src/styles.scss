@@ -38,13 +38,6 @@ h2 {
   // text-fill-color: transparent;
 }
 
-h3 {
-  font-size: 1.5vw;
-  text-transform: capitalize;
-  font-family: "Orbitron", sans-serif;
-  font-weight: 100;
-}
-
 button {
   cursor: pointer;
 }
@@ -102,5 +95,20 @@ button {
     opacity: 1;
     scale: 1;
     // width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 12vw;
+    line-height: 100%;
+  }
+  h2 {
+    letter-spacing: 5px;
+    font-size: 9vw;
+  }
+  .autoshow {
+    animation: autoshow both;
+    animation-timeline: view(95% 10%);
   }
 }

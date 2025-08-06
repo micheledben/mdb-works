@@ -1,6 +1,19 @@
-<div class="content-max">
+<div
+  class="content-max"
+  [ngClass]="{ hidden: layoutService.menuVisibleOnMobile }"
+>
   <div class="header">
-    <app-header></app-header>
+    <div class="header-component">
+      <app-header></app-header>
+    </div>
+    <div class="menu-mobile" (click)="layoutService.onMenuVisible()">
+      <div class="icon-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      @if(layoutService.menuVisibleOnMobile){
+      <app-header></app-header>
+      }
+    </div>
   </div>
   <div class="content">
     <router-outlet></router-outlet>
