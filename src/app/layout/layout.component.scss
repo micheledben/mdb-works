@@ -39,7 +39,7 @@
         .icon-menu {
           text-align: end;
           padding: 10px;
-          backdrop-filter: blur(15px);
+          backdrop-filter: blur(10px);
         }
       }
     }
@@ -47,9 +47,8 @@
       padding: 20vw 8vw;
     }
   }
-}
-
-.hidden {
-  max-height: 100vh;
-  overflow: hidden;
+  .hidden {
+    max-height: 100vh;
+    overflow: hidden;
+  }
 }
