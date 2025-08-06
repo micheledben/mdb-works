@@ -117,11 +117,11 @@
 @keyframes show-title-card {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }
 
@@ -129,7 +129,6 @@
   .content-max {
     height: max-content;
     .title-arrow {
-      animation: show-title-card-cell 1s forwards;
       justify-content: space-between;
       .arrow {
         width: 8vw;
@@ -144,8 +143,6 @@
     .content {
       padding: 5vw 0vw;
       flex-direction: column;
-      animation: show-title-card-cell 1s forwards;
-      animation-delay: 0.5s;
       gap: 5vw;
       h3 {
         font-size: 5vw;
@@ -193,16 +190,5 @@
         }
       }
     }
-  }
-}
-
-@keyframes show-title-card-cell {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
   }
 }
