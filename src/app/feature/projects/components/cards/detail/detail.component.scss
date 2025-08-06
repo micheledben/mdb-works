@@ -48,7 +48,6 @@
     .repository {
       p {
         font-family: "Orbitron", sans-serif;
-        font-size: 1.5vw;
       }
       a {
         color: white;
@@ -123,5 +122,87 @@
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-max {
+    height: max-content;
+    .title-arrow {
+      animation: show-title-card-cell 1s forwards;
+      justify-content: space-between;
+      .arrow {
+        width: 8vw;
+        height: 8vw;
+        padding: 1vw;
+      }
+      .title {
+        width: 90%;
+        text-align: center;
+      }
+    }
+    .content {
+      padding: 5vw 0vw;
+      flex-direction: column;
+      animation: show-title-card-cell 1s forwards;
+      animation-delay: 0.5s;
+      gap: 5vw;
+      h3 {
+        font-size: 5vw;
+      }
+      p {
+        font-size: 5vw;
+      }
+      .description-project {
+        width: 100%;
+        padding: 2vw 3vw;
+      }
+      .repository {
+        a {
+          font-size: 5vw;
+        }
+      }
+      .title-images {
+        width: 100%;
+        .responsive-container {
+          gap: 5vw;
+        }
+        .title {
+          padding: 0vw 0vw 5vw;
+        }
+        .images {
+          flex-direction: column;
+          p {
+            width: 100%;
+            text-align: center;
+          }
+          .single-image {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 5vw;
+            .image-pc {
+              height: 50vw;
+              width: 100%;
+            }
+            .image-smartphone {
+              height: 100vw;
+              width: 75%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes show-title-card-cell {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
