@@ -53,3 +53,35 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .content-max {
+    padding: 20vw 0px;
+    justify-content: center;
+    .all-services {
+      flex-direction: column;
+      gap: 5vw;
+      padding: 0;
+      .single-service {
+        width: 100%;
+        padding: 10px 20px;
+        height: max-content;
+        min-height: 40vw;
+        .name {
+          img {
+            width: 12vw;
+          }
+          p {
+            font-size: 6vw;
+          }
+        }
+        .description {
+          p {
+            font-size: 5vw;
+            line-height: 6vw;
+          }
+        }
+      }
+    }
+  }
+}

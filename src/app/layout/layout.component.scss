@@ -8,10 +8,14 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    .menu-mobile {
+      display: none;
+    }
   }
   .content {
     padding: 0px 10vw;
   }
+
   .footer {
     height: 300px;
     border-top: 2px solid white;
@@ -19,5 +23,34 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
+  .content-max {
+    .header {
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
+      .header-component {
+        display: none;
+      }
+      .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        font-size: 10vw;
+        .icon-menu {
+          text-align: end;
+          padding: 10px;
+          backdrop-filter: blur(15px);
+        }
+      }
+    }
+    .content {
+      padding: 20vw 8vw;
+    }
+  }
+}
+
+.hidden {
+  max-height: 100vh;
+  overflow: hidden;
 }

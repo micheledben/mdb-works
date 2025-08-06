@@ -46,3 +46,26 @@
     transform: rotatey(360deg);
   }
 }
+
+@media screen and (max-width: 500px) {
+  .content-max {
+    justify-content: center;
+    padding: 10vw 0px;
+    .paragraph {
+      p {
+        font-size: 6vw;
+      }
+      .images {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3vw;
+        .image-text {
+          width: 30%;
+          p {
+            font-size: 5vw;
+          }
+        }
+      }
+    }
+  }
+}
