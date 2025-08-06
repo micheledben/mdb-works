@@ -77,3 +77,49 @@
     transform: translateX(0px);
   }
 }
+
+@media screen and (max-width: 500px) {
+  .content-max {
+    padding: 0;
+    .title {
+      width: 100%;
+      text-align: center;
+      animation: show-title-card-cell 1s forwards;
+    }
+    .all-cards {
+      grid-template-columns: repeat(1, 1fr);
+      .single-card {
+        animation: show-title-card-cell 1s forwards;
+        animation-delay: 0.5s;
+        flex-direction: column;
+        height: 80vw;
+        .text {
+          width: 100%;
+          padding: 1vw;
+          font-size: 4vw;
+          height: max-content;
+          gap: 5vw;
+          .title-description {
+            .card-title {
+              font-size: 5vw;
+            }
+          }
+        }
+        .image {
+          height: 60%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes show-title-card-cell {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

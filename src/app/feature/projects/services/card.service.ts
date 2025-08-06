@@ -9,7 +9,7 @@ export class CardService {
   cards = [
     {
       id: 1,
-      name: 'BagsCrochet 2',
+      name: 'Bags Crochet 2',
       description: 'Ecommerce grafica di borse da donna.',
       coding: 'ANGULAR',
       repository: 'https://github.com/micheledben/E-commerce-bag',

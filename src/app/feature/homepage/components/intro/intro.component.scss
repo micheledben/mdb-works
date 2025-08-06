@@ -89,12 +89,6 @@
         transition: 0.5s ease-in-out;
       }
     }
-    .image:before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      background-color: black;
-    }
   }
 }
 
@@ -127,10 +121,10 @@
 
 @media screen and (max-width: 500px) {
   .content-max {
+    height: max-content;
     padding: 0;
     flex-direction: column;
     gap: 5vw;
-    padding: 3vw 0vw;
     .paragraph {
       width: 100%;
       .text {
@@ -152,7 +146,7 @@
     }
     .image-max {
       width: 100%;
-      height: 40%;
+      height: 75vw;
       .image {
         padding: 0;
         background-image: none;
