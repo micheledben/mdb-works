@@ -47,22 +47,26 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .content-max {
     justify-content: center;
     padding: 20vw 0px;
     .paragraph {
+      padding: 5vw 3vw 3vw;
+      gap: 3vw;
       p {
         font-size: 6vw;
       }
       .images {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         gap: 3vw;
+        width: 100%;
         .image-text {
-          width: 30%;
+          width: 25%;
           p {
-            font-size: 5vw;
+            margin-top: 5px;
+            font-size: 4vw;
           }
         }
       }

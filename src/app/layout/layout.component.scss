@@ -3,7 +3,9 @@
   background-attachment: scroll;
   // background-image: linear-gradient(140deg, black 0%, rgb(0, 0, 61) 15%, black 30%, rgb(61, 0, 36) 45%, black 60%, rgb(61, 22, 0) 75%, black 100%);
   // background-image: radial-gradient(rgb(0, 0, 75) 0%, black 100%);
-  background-image: url("/assets/img-sfondo.jpg");
+  background: url("/assets/img-sfondo.jpg") repeat;
+  animation: moveBackground 100s linear infinite;
+  background-size: 100%;
   .header {
     position: sticky;
     top: 0;
@@ -17,12 +19,23 @@
   }
 
   .footer {
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
 
-@media screen and (max-width: 500px) {
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 500px 500px;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .content-max {
     .header {
       width: 100%;

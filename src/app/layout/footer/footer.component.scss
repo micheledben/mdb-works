@@ -1,0 +1,53 @@
+.content-max {
+  padding: 1vw 5vw;
+  .on-top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 5vw;
+    right: 5vw;
+    button {
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      border: 2px solid orangered;
+      border-radius: 50%;
+      i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        width: 100%;
+        height: 100%;
+        color: orangered;
+      }
+    }
+  }
+  .structure-footer {
+    padding-bottom: 5vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .copyright {
+    position: relative;
+    p {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-size: 0.8vw;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 5vw;
+  }
+  .content-max {
+    .copyright {
+      p {
+        font-size: 2vw;
+      }
+    }
+  }
+}

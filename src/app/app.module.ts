@@ -7,9 +7,15 @@ import { HeaderComponent } from './layout/header/header.component';
 import { ProjectsModule } from './feature/projects/projects.module';
 import { HomepageModule } from './feature/homepage/homepage.module';
 import { AboutMeModule } from './feature/about-me/homepage.module';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, LayoutComponent, HeaderComponent],
+  declarations: [
+    AppComponent,
+    LayoutComponent,
+    HeaderComponent,
+    FooterComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
